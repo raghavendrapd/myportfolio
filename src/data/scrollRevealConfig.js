@@ -65,3 +65,5 @@ export const targetElements = [
     },
   },
 ];
+
+console.log('Hello World');
