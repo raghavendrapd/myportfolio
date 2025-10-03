@@ -3,10 +3,12 @@
   "version": "1.0.1",
   "private": "true",
   "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "source": "src/index.html",
+  "source": "index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel index.html --open --port 8080",
+    "build": "parcel build --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,10 @@
   "bugs": {
     "url": "https://github.com/cobiwave/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://comicparrot.github.io/simplefolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.8.2",
     "prettier": "^2.8.1"
   },

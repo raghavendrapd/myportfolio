@@ -8,6 +8,14 @@
   Readme: https://github.com/cobiwave/simplefolio/README.md
   -
   For business & inquires, contact me -> jacobojavier98@gmail.com
+
+  Run these commands whenever a change is made to html file
+  git add .
+  git commit -m "Update" && \
+  npx parcel build index.html --public-url ./ && \
+  npx gh-pages -d dist
+
+
 -->
 <!DOCTYPE html>
 <html lang="en" class="sr">
@@ -18,24 +26,24 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Mark Waldner | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="[Your name here] | Developer" />`<q></q>
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="styles.scss" />
+    <!--<link rel="stylesheet" href="./styles.scss" />-->
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Todo: remove the below script once you finish your portfolio 
+    <script async defer src="https://buttons.github.io/buttons.js"></script>-->
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -46,9 +54,9 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Mark Waldner</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a Full-Stack Web Developer perfect for you!
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -71,7 +79,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.jpg"
+                src="./assets/profile.jpg"
                 alt="Profile Image"
               />
             </div>
@@ -79,18 +87,20 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                Hi, I’m Mark Waldner, a passionate Full-Stack Web Developer who loves turning ideas into fully functional web applications. 
+                I enjoy working across the entire stack—from designing intuitive front-end interfaces to building robust server-side logic and databases.
+                I thrive on solving complex problems, learning new technologies, and creating projects that are not only functional but also visually appealing. 
+                Outside of coding, I enjoy hunting,fishing and spending time with my family, which inspire me to bring creativity and innovation into my work.
+                I’m always excited to collaborate on new projects, tackle challenges, and contribute to meaningful software solutions. 
+                Feel free to explore my <a href="#projects" class="b fw2">portfolio</a> to see some of the work I’m proud of!
               </p>
-              <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
-              </p>
+
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="./assets/resume.pdf"
                 >
                   View Resume
                 </a>
@@ -112,19 +122,18 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Gradient BackGround Generator</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    This project is a browser background generator that generates a gradient background and displays the gradient background and the css for that background. It also 
+                    has the ability to choose a gradient direction and also to pick random colors.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://comicparrot.github.io/background-generator/"
                 >
                   See Live
                 </a>
@@ -132,7 +141,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/comicparrot/background-generator"
                 >
                   Source Code
                 </a>
@@ -140,7 +149,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://comicparrot.github.io/background-generator/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -151,7 +160,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="./assets/background-gen.png"
                     />
                   </div>
                 </a>
@@ -164,19 +173,19 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Demeter Ag</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    This ASP.NET web application demonstrates full-stack development, combining front-end technologies (HTML, CSS, JavaScript) with server-side C# functionality.
+                     Designed for an agricultural machinery dealership, it features secure user authentication, database connectivity, order history management, and 
+                     additional interactive features
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://demeterag-cse6cqhbgzcdfkh4.centralus-01.azurewebsites.net"
                 >
                   See Live
                 </a>
@@ -184,7 +193,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/comicparrot/agridealer-webapp/tree/master/DemeterMachine"
                 >
                   Source Code
                 </a>
@@ -192,7 +201,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://demeterag-cse6cqhbgzcdfkh4.centralus-01.azurewebsites.net" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -203,7 +212,60 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="./assets/demeter.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Robofriends</h3>
+                <div>
+                  <p class="mb-4">
+                    This React project is a dynamic, responsive web application featuring a real-time search function. 
+                    It retrieves and displays data from an API, allowing users to quickly filter results as they type. 
+                    The search is implemented with state management and optimized rendering, ensuring fast and smooth user interaction.
+                    The clean, modular code structure makes it easy to maintain and expand with additional features.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://comicparrot.github.io/robofriends/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/comicparrot/robofriends"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://comicparrot.github.io/robofriends/" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="./assets/robofriends.png"
                     />
                   </div>
                 </a>
@@ -216,18 +278,19 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Chuck Norris</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    This React project is a dynamic, responsive web application featuring a real-time API interactions. 
+                    It retrieves and displays data from an API, allowing users to click an button to toggle a dynamic output. 
+                    The clean, modular code structure makes it easy to maintain and expand with additional features.
                   </p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://comicparrot.github.io/chuck-norris-generator/"
                 >
                   See Live
                 </a>
@@ -235,7 +298,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/comicparrot/chuck-norris-generator"
                 >
                   Source Code
                 </a>
@@ -243,7 +306,7 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://comicparrot.github.io/chuck-norris-generator/" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -254,7 +317,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="./assets/chuck.png"
                     />
                   </div>
                 </a>
@@ -262,22 +325,30 @@
             </div>
           </div>
           <!-- /END Project -->
+
+
+
+
         </div>
       </div>
     </section>
     <!-- /END Projects Section -->
+
+
+
+
 
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Please email me to discuss</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
+            href="mailto:markrw2011@gmail.com"
             >Call to Action</a
           >
         </div>
@@ -292,54 +363,29 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/mark-waldner-232a8020a" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/comicparrot" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it
         <p class="footer__text">
           © 2021 - Template developed by
           <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
             >Jacobo Martínez</a
           >
         </p>
+ -->
 
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
       </div>
     </footer>
     <!-- /END Footer Section -->
 
-    <script defer type="module" src="index.js"></script>
+    <script defer type="module" src="./index.js"></script>
   </body>
 </html>
