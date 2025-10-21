@@ -64,4 +64,11 @@ export const targetElements = [
       origin: "bottom",
     },
   },
+  {
+    element: ".experience-wrapper",
+    animation: {
+        delay: 500,
+        origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  }
 ];
